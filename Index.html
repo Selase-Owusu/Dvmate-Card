@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Devmate Profile Card</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --accent: #0ff;
+      --text: #f0f6fc;
+      --blur-bg: rgba(22, 27, 34, 0.6);
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: url('https://images.unsplash.com/photo-1542751110-97427bbecf20?auto=format&fit=crop&w=1400&q=80') no-repeat center center fixed;
+      background-size: cover;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+
+    .profile-card {
+      background: var(--blur-bg);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border: 1px solid rgba(0, 255, 255, 0.2);
+      border-radius: 20px;
+      width: 100%;
+      max-width: 350px;
+      padding: 30px 20px;
+      text-align: center;
+      box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
+      transition: 0.3s ease;
+    }
+
+    .profile-card:hover {
+      box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+      transform: translateY(-5px);
+    }
+
+    .profile-img {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      border: 3px solid var(--accent);
+      object-fit: cover;
+      margin-bottom: 15px;
+    }
+
+    .profile-name {
+      font-size: 20px;
+      font-weight: 600;
+      color: var(--text);
+      margin-bottom: 5px;
+    }
+
+    .profile-title {
+      font-size: 14px;
+      color: #8b949e;
+      margin-bottom: 15px;
+    }
+
+    .profile-bio {
+      font-size: 13px;
+      color: #aaa;
+      margin-bottom: 20px;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .social-icons a {
+      width: 36px;
+      height: 36px;
+      border-radius: 50%;
+      border: 1px solid rgba(0, 255, 255, 0.2);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: 0.3s;
+      background-color: rgba(255, 255, 255, 0.05);
+    }
+
+    .social-icons a:hover {
+      background: var(--accent);
+    }
+
+    .social-icons img {
+      width: 18px;
+      height: 18px;
+      filter: brightness(100);
+    }
+
+    .profile-buttons a {
+      display: inline-block;
+      margin: 5px;
+      padding: 10px 25px;
+      background: var(--accent);
+      color: #000;
+      text-decoration: none;
+      border-radius: 8px;
+      font-size: 14px;
+      font-weight: 600;
+      transition: background 0.2s;
+    }
+
+    .profile-buttons a:hover {
+      background: #00cccc;
+    }
+
+    @media (max-width: 400px) {
+      .profile-card {
+        padding: 20px 15px;
+      }
+
+      .profile-buttons a {
+        padding: 8px 20px;
+        font-size: 13px;
+      }
+
+      .social-icons {
+        gap: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="profile-card">
+    <!-- ✅ Devmate image added here -->
+    <img src="dev.png" alt="Devmate" class="profile-img" />
+
+    <div class="profile-name">GoodBoySK</div>
+    <div class="profile-title">Frontend Dev | HTML • CSS • Java • C++</div>
+    <div class="profile-bio">
+      Sharing clean UI, real code, and tech tutorials.  
+      Building Devmate one line at a time 💻.
+    </div>
+
+    <div class="social-icons">
+      <a href="https://www.tiktok.com/@devmatehub21" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/3046/3046122.png" alt="TikTok">
+      </a>
+      <a href="https://github.com/" target="_blank">
+        <img src="https://cdn-icons-png.flaticon.com/512/733/733553.png" alt="GitHub">
+      </a>
+      <a href="mailto:you@example.com">
+        <img src="https://cdn-icons-png.flaticon.com/512/732/732200.png" alt="Email">
+      </a>
+    </div>
+
+    <div class="profile-buttons">
+      <a href="https://www.tiktok.com/@devmatehub21" target="_blank">Follow</a>
+      <a href="https://www.tiktok.com/@devmatehub21" target="_blank">Message</a>
+    </div>
+  </div>
+
+</body>
+</html>
